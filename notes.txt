@@ -1,0 +1,6 @@
+React Components
+- React renders buttons, images, etc. .json, javascript stuff
+- Component Hierarchy
+- Want to be able to reuse code, dyanmic programming
+- React is good for compartmentalizing everything
+     - Javascript library for building UI

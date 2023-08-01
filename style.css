@@ -1,0 +1,98 @@
+/* Notes */
+
+li {
+     color:blue;
+}
+
+.color-red {
+     color: red;
+}
+
+.color-green {
+     color: green
+}
+
+#color-purple {
+     color: purple;
+}
+
+/* priority, ID, Class, etc... 
+- <style></style> (another way but not recommended)
+
+*/
+
+/* everything in body affected */
+ul {
+     background-color: lightblue;
+     /* Layout, margin, Border, Padding, and Content (box, content is the center) */
+     border: 2px solid black;
+     padding: 20px;
+     /* width: 40%;  Modifies width of box */
+     padding-left: 5%; /* percentage represents size of screen */
+     margin: 20px; /* controls extra space around box */
+     margin-top: 30px;
+     /* Flex */
+     display: flex;
+     flex: row; /* shows rows instead of columns */
+     justify-content: center;
+     flex-wrap: wrap; /* If can't fit elements onto row, will move to next row */
+}
+
+/* can do h1, h2, h3 to simplify it */
+h1 {
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 3em; /* 3em means 3x bigger than any other font */
+}
+
+/* Flexboxes: Display: Flex, Flex-Direction, Justify-Content, Alight-Items, Gap */
+li {
+     background-color: lightgreen;
+     margin: 50px;
+     width: 20%;
+}
+
+a {
+     margin: 20px;
+}
+
+/* PsuedoClasses: first-child, last-child, hover, active */
+
+ul :first-child {
+     background-color: pink;
+}
+
+ul :hover {
+     background-color: lime;
+}
+
+/* Media Query, Can create different styles for different sized devices 
+* this example shows for when window size is smaller than 900pixels */
+@media (max-width: 900px) {
+     body{
+          background-color: skyblue;
+     }
+}
+
+/* Animations */
+ul :hover{
+     transform: translate(20px);
+     box-shadow: 2px 2px 5px;
+}
+
+/* Working with images */
+img {
+ /* width: 50%; */
+}
+
+.containter {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
+/* Keeps header at the top while you scroll down */
+header{
+     position: sticky;
+     top: 0;
+}
